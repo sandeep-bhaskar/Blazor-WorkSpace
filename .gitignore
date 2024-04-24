@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.vsidx
+/Shared/Models/bin/Debug/net8.0
+/Shared/Models/obj
+/WebApp/BlazorWebApp/BlazorWebApp/bin/Debug/net8.0
+/WebApp/BlazorWebApp/BlazorWebApp/obj
+/WebApp/BlazorWebApp/BlazorWebApp.Client/bin/Debug/net8.0
+/WebApp/BlazorWebApp/BlazorWebApp.Client/obj
+/.vs/BlazorAuthentication

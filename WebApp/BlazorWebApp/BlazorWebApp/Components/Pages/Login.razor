@@ -1,0 +1,25 @@
+﻿@page "/account/login"
+@using System.Security.Claims
+@using Microsoft.IdentityModel.Tokens
+@using System.IdentityModel.Tokens.Jwt
+@inject IConfiguration configuration
+@inject NavigationManager navigationManager
+
+<form method="post" @onsubmit="Submit" @formname="login">
+    <AntiforgeryToken />
+    <div>
+        <label>
+            UserName:
+            <InputText @bind-Value="Model.UserName"/>
+        </label>
+    </div>
+    <div>
+        <label>
+            Password:
+            <InputText @bind-Value="Model.Password" />
+        </label>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>

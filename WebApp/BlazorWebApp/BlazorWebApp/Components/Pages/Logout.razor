@@ -1,0 +1,15 @@
+﻿@page "/account/logout"
+@inject NavigationManager NavigationManager
+
+@code {
+    [CascadingParameter]
+    public HttpContext HttpContext { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpContext.Response.Cookies.Delete("X-Access-Token");
+        NavigationManager.NavigateTo("/");
+        await base.OnInitializedAsync();
+    }
+
+}
